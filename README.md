@@ -28,8 +28,13 @@ Install MariaDB.
 ## 1. RDS (Relational Database Service)
 
 Create Database
+
 Standard create 
+
 MariaDB
+
 Username - <admin>
+
 Password - <redhat123>
+
 Create Database
