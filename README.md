@@ -47,20 +47,34 @@ Install MariaDB.
 . Connect
 
 ```shell
-# Switch to root user
+## Switch to root user
 sudo -i
 
-# Update the instance
+## Update the instance
 apt update
 
-# Install MySQL client
+## Install MySQL client
 apt install mysql-client -y
 
-# Mysql
+## Mysql
 mysql -h (endpoint) -u (username) -p
 Enter password (password)
 
 # RDS Database Endpoint copy & paste
 # Example: mysql -h database-1.ca9eie2mihs7.us-east-1.rds.amazonaws.com -u admin -p
 # Example: redhat123
+
+CREATE DATABASE student_db;
+GRANT ALL PRIVILEGES ON springbackend.* TO 'username'@'localhost' IDENTIFIED BY 'password';
+show databases;
+exit;
+# Example: GRANT ALL PRIVILEGES ON springbackend.* TO 'admin'@'localhost' IDENTIFIED BY 'redhat123';
+
+
+## Install Docker
+apt install docker.io -y
+
+## Clone the GitHub Repository
+git clone <GitHub_Repository_Link>
+# Example: git clone https://github.com/username/student-registration.git
 ```
