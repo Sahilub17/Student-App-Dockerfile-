@@ -107,4 +107,60 @@ nano dockerfile
     EXPOSE 8080
     CMD ["java","-jar","student-registration-backend-0.0.1-SNAPSHOT.jar"]
 
+# Build Backend Dockerfile
+docker build . -t backend :v1
+
+# Check docker images
+docker images
+
+# Docker Container run 
+docker run -d -p 8080:8080 backend :v1
+
+# Check docker container
+docker ps
+
+## 8. Frontend =
+
+cd ../frontend/
+ls
+
+# Write .env file =
+nano .env
+
+# Example: (Paste EC2 public IP)
+
+# Write Frontend dockerfile =
+nano dockerfile
+    FROM node:25-alpine3.21
+    COPY . /opt
+    WORKDIR /opt
+    RUN apk update 
+    RUN apk add apache2
+    RUN npm install
+    RUN npm run build
+    RUN cp -rf dist/* /var/www/localhost/htdocs/
+    EXPOSE 80
+    CMD ["httpd","-D","FOREGROUND"]
+
+
+# Build Frontend Dockerfile
+docker build . -t frontend :v1
+
+# Check docker images
+docker images
+
+# Docker Container run 
+docker run -d -p 80:80 frontend :v1
+
+# Check docker container
+docker ps
+
+```
+
+✅ Verification and Testing
+Access website:
+Open your browser and go to
+
+```
+http://<EC2-Public-IP>
 ```
