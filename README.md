@@ -25,6 +25,7 @@ Install MariaDB.
 
 ## 🪜 Steps and Commands:
 
+
 ## 1. RDS (Relational Database Service) -
 
 . Create Database
@@ -40,3 +41,6 @@ Install MariaDB.
 . Create Database
 
 ## 2. EC2 (Elastic Compute Cloud) -
+
+. Launch instance 
+. connect
