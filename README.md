@@ -47,16 +47,16 @@ Install MariaDB.
 . Connect
 
 ```shell
-## Switch to root user
+## 1. Switch to root user
 sudo -i
 
-## Update the instance
+## 2. Update the instance
 apt update
 
-## Install MySQL client
+## 3. Install MySQL client
 apt install mysql-client -y
 
-## Mysql
+## 4. Mysql
 mysql -h (endpoint) -u (username) -p
 Enter password (password)
 
@@ -68,13 +68,26 @@ CREATE DATABASE student_db;
 GRANT ALL PRIVILEGES ON springbackend.* TO 'username'@'localhost' IDENTIFIED BY 'password';
 show databases;
 exit;
+
 # Example: GRANT ALL PRIVILEGES ON springbackend.* TO 'admin'@'localhost' IDENTIFIED BY 'redhat123';
 
 
-## Install Docker
+## 5. Install Docker
 apt install docker.io -y
 
-## Clone the GitHub Repository
+## 6. Clone the GitHub Repository
 git clone <GitHub_Repository_Link>
+
 # Example: git clone https://github.com/username/student-registration.git
+
+cd <GitHub_Repository_Name>/backend
+cp src/main/resources/application.properties .
+nano application.properties
+    server.port=8080
+    spring.datasource.url=jdbc:mariadb://(database endpoint paste):3306/student_db 
+    spring.datasource.username=(database username)
+    spring.datasource.password=(database password)
+    spring.jpa.hibernate.ddl-auto=update
+    spring.jpa.show-sql=true
+# Then ctrl s+x
 ```
