@@ -82,6 +82,8 @@ git clone <GitHub_Repository_Link>
 
 cd <GitHub_Repository_Name>/backend
 cp src/main/resources/application.properties .
+
+# Write application.properties =
 nano application.properties
     server.port=8080
     spring.datasource.url=jdbc:mariadb://(database endpoint paste):3306/student_db 
@@ -90,4 +92,19 @@ nano application.properties
     spring.jpa.hibernate.ddl-auto=update
     spring.jpa.show-sql=true
 # Then ctrl s+x
+
+## 7. Backend =
+
+# Write Backend Dockerfile =
+nano dockerfile
+    FROM maven:3.8.3-openjdk-17
+    COPY . /opt
+    WORKDIR /opt
+    RUN rm -rf src/main/resources/application.properties
+    RUN cp -rf application.properties src/main/resources
+    RUN mvn clean package
+    WORKDIR /opt/target
+    EXPOSE 8080
+    CMD ["java","-jar","student-registration-backend-0.0.1-SNAPSHOT.jar"]
+
 ```
