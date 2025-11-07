@@ -24,3 +24,8 @@ Install MariaDB.
 ✅ MySQL Client is installed.
 
 ## 🪜 Steps and Commands
+
+## 1. RDS
+```
+Create Database
+```
