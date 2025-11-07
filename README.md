@@ -23,4 +23,4 @@ Install MariaDB.
  
 ✅ MySQL Client is installed.
 
-## 1.
+## 🪜 Steps and Commands
