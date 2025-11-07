@@ -38,3 +38,5 @@ Install MariaDB.
 . Password - (redhat123)
 
 . Create Database
+
+## 2. EC2 (Elastic Compute Cloud)
