@@ -158,7 +158,10 @@ docker ps
 ```
 
 ✅ Verification and Testing
+
+
 Access website:
+
 Open your browser and go to
 
 ```
