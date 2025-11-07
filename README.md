@@ -2,17 +2,17 @@
 
 
 
-## Frontend
+## .Frontend
 Node.js and npm must be installed.
 
-## Backend
+## .Backend
 Java Development Kit (JDK 17 or higher) must be installed.
 Maven must be installed.
 
-## Database
+## .Database
 Install MariaDB.
 
-## Before starting, make sure:
+## .Before starting, make sure:
 
  RDS (Relational Database Service) is created.
 
