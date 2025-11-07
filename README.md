@@ -34,9 +34,9 @@ Install MariaDB.
 
 . MariaDB
 
-. Username - (admin)
+. Username - (admin) - Ex.
 
-. Password - (redhat123)
+. Password - (redhat123) - Ex.
 
 . Create Database
 
@@ -55,5 +55,11 @@ apt update
 
 # Install MySQL client
 apt install mysql-client -y
-```
 
+# Mysql
+mysql -h (endpoint) -u (username) -p
+Enter password (password)
+# Endpoint Databases Copy 
+# Example: mysql -h database-1.ca9eie2mihs7.us-east-1.rds.amazonaws.com -u admin -p
+# Example: redhat123
+```
