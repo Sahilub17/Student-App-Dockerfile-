@@ -22,6 +22,8 @@ Install MariaDB.
 3. Docker is installed.
  
 4. MySQL Client is installed.
+   
+
 
 ##  Steps and Commands:
 
