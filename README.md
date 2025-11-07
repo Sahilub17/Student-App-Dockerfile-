@@ -1,29 +1,29 @@
-# 🧾 Student Registration Website.
+#  Student Registration Website.
 
 
 
-## 🖥️ Frontend -
+##  Frontend -
 Node.js and npm must be installed.
 
-## 🧠 Backend -
+##  Backend -
 Java Development Kit (JDK 17 or higher) must be installed.
 
 Maven must be installed.
 
-## 🗄️ Database -
+##  Database -
 Install MariaDB.
 
-## ⚙️ Before starting, make sure:-
+##  Before starting, make sure:-
 
-✅ RDS (Relational Database Service) is created.
+1. RDS (Relational Database Service) is created.
 
-✅ EC2 Instance is launched.
+2. EC2 Instance is launched.
  
-✅ Docker is installed.
+3. Docker is installed.
  
-✅ MySQL Client is installed.
+4. MySQL Client is installed.
 
-## 🪜 Steps and Commands:
+##  Steps and Commands:
 
 
 ## 1. RDS (Relational Database Service) -
