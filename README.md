@@ -43,4 +43,16 @@ Install MariaDB.
 ## 2. EC2 (Elastic Compute Cloud) -
 
 . Launch instance 
-. connect
+
+. Connect
+
+# Switch to root user
+sudo -i
+
+# Update the instance
+apt update
+
+# Install MySQL client
+apt install mysql-client -y
+
+
