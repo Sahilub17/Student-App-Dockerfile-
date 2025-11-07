@@ -2,18 +2,18 @@
 
 
 
-## 🖥️ Frontend
+## 🖥️ Frontend -
 Node.js and npm must be installed.
 
-## 🧠 Backend
+## 🧠 Backend -
 Java Development Kit (JDK 17 or higher) must be installed.
 
 Maven must be installed.
 
-## 🗄️ Database
+## 🗄️ Database -
 Install MariaDB.
 
-## ⚙️ Before starting, make sure:
+## ⚙️ Before starting, make sure:-
 
 ✅ RDS (Relational Database Service) is created.
 
@@ -23,9 +23,9 @@ Install MariaDB.
  
 ✅ MySQL Client is installed.
 
-## 🪜 Steps and Commands
+## 🪜 Steps and Commands:
 
-## 1. RDS (Relational Database Service)
+## 1. RDS (Relational Database Service) -
 
 . Create Database
 
@@ -39,4 +39,4 @@ Install MariaDB.
 
 . Create Database
 
-## 2. EC2 (Elastic Compute Cloud)
+## 2. EC2 (Elastic Compute Cloud) -
