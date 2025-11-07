@@ -22,3 +22,5 @@ Install MariaDB.
 ✅ Docker is installed.
  
 ✅ MySQL Client is installed.
+
+## 1.
