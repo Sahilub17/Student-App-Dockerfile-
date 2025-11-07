@@ -46,6 +46,7 @@ Install MariaDB.
 
 . Connect
 
+```shell
 # Switch to root user
 sudo -i
 
@@ -54,5 +55,5 @@ apt update
 
 # Install MySQL client
 apt install mysql-client -y
-
+```
 
